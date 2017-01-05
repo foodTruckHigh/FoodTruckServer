@@ -1,0 +1,55 @@
+
+
+spring:
+  profiles:
+      active: local
+
+  mail:
+    host: smtp.gmail.com
+    port: 25
+    username: "peoplejobis@gmail.com"
+    password: "bxhnoydmxdzculsp"
+    properties:
+          mail:
+             smtp:
+               auth : true
+               starttls: 
+                  enable   : true
+                  required : true
+  jpa:
+    hibernate:
+      ddl-auto: create
+    generate-ddl: false
+    show-sql: true
+   
+datasource:
+   serviceDb:
+      driverClassName: "com.mysql.jdbc.Driver"
+      url: "jdbc:mysql://172.30.1.198:3306/funding?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8"
+      username: 'scrab'
+      password: 'scrab$'
+      initial-size: 10
+      max-active: 50
+      max-idle: 50
+      min-idle: 10
+      max-wait: 5000
+      connection-test-query: "SELECT 1"
+      testWhileIdle: "true"
+      minEvictableIdleTimeMillis: "3600000"
+      timeBetweenEvictionRunsMillis: "60000"
+      
+   serviceDb_2:
+      driverClassName: "com.mysql.jdbc.Driver"
+      url: "jdbc:mysql://172.30.1.198:3306/funding?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8"
+      username: 'scrab'
+      password: 'scrab$'
+      initial-size: 10
+      max-active: 50
+      max-idle: 50
+      min-idle: 10
+      max-wait: 5000
+      connection-test-query: "SELECT 1"
+      testWhileIdle: "true"
+      minEvictableIdleTimeMillis: "3600000"
+      timeBetweenEvictionRunsMillis: "60000"
+ 
